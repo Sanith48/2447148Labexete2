@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Application</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #333; color: white; padding: 10px; text-align: center; }
+        .container { padding: 20px; }
+        .news-item { border: 1px solid #ddd; margin-bottom: 10px; padding: 10px; }
+        .news-item img { max-width: 100px; margin-right: 10px; }
+        .form-container { margin: 20px 0; }
+        .form-container input, .form-container button { margin: 5px 0; padding: 10px; width: 100%; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News Application</h1>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div id="news-list"></div>
+    </div>
+    <script>
+        async function fetchNews() {
+            const response = await fetch('news.json');
+            const news = await response.json();
+            displayNews(news);
+        }
+
+        function displayNews(news) {
+            const newsList = document.getElementById('news-list');
+            newsList.innerHTML = '';
+
+            news.forEach(item => {
+                const newsItem = document.createElement('div');
+                newsItem.classList.add('news-item');
+                newsItem.innerHTML = `
+                    <img src="${item.urlToImage}" alt="${item.title}">
+                    <h3><a href="${item.url}" target="_blank">${item.title}</a></h3>
+                    <p>${item.description}</p>
+                    <p><strong>Author:</strong> ${item.author}</p>
+                    <p><strong>Published At:</strong> ${new Date(item.publishedAt).toLocaleDateString()}</p>
+                    <p>${item.content}</p>
+                `;
+                newsList.appendChild(newsItem);
+            });
+        }
+
+
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+
+            if (username && email) {
+                alert('Sign-up successful!');
+               
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+
+        window.onload = fetchNews;
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+[
+    {
+        "id": "bbc-news",
+        "name": "BBC News",
+        "author": "Jane Smith",
+        "title": "Another Important Event",
+        "description": "Details about another important event happening around the world.",
+        "url": "https://www.bbc.com/news/world/2024/important-event",
+        "urlToImage": "https://cdn.bbc.com/news/images/important-event.jpg",
+        "publishedAt": "2024-09-08T10:20:00Z",
+        "content": "This is the full article content for the important event happening globally."
+    },
+    {
+        "id": "cnn-news",
+        "name": "CNN",
+        "author": "Daniel John",
+        "title": "Major Tech Breakthrough",
+        "description": "Latest updates on a significant breakthrough in technology.",
+        "url": "https://www.cnn.com/2024/tech/major-tech-breakthrough",
+        "urlToImage": "https://cdn.cnn.com/tech/images/major-breakthrough.jpg",
+        "publishedAt": "2024-09-09T12:30:00Z",
+        "content": "Details on a major tech breakthrough that is set to revolutionize the industry."
+    },
+    {
+        "id": "nytimes",
+        "name": "The New York Times",
+        "author": "Alan Abraham",
+        "title": "Economic Trends in 2024",
+        "description": "Analysis of current economic trends and forecasts for the future.",
+        "url": "https://www.nytimes.com/2024/09/09/economic-trends",
+        "urlToImage": "https://cdn.nytimes.com/economic-trends.jpg",
+        "publishedAt": "2024-09-09T14:00:00Z",
+        "content": "In-depth analysis of economic trends and their implications for 2024 and beyond."
+    },
+    {
+        "id": "reuters",
+        "name": "Reuters",
+        "author": "Michael TJ",
+        "title": "Global Climate Change Report",
+        "description": "New report on the state of global climate change.",
+        "url": "https://www.reuters.com/article/global-climate-change-report",
+        "urlToImage": "https://cdn.reuters.com/climate-change-report.jpg",
+        "publishedAt": "2024-09-10T09:15:00Z",
+        "content": "A comprehensive report detailing the latest findings on global climate change."
+    },
+    {
+        "id": "aljazeera",
+        "name": "Al Jazeera",
+        "author": "Sara Johnson",
+        "title": "Middle East Peace Talks",
+        "description": "Updates on the latest peace talks in the Middle East.",
+        "url": "https://www.aljazeera.com/news/2024/09/middle-east-peace-talks",
+        "urlToImage": "https://cdn.aljazeera.com/peace-talks.jpg",
+        "publishedAt": "2024-09-11T16:45:00Z",
+        "content": "Current developments and discussions in the ongoing Middle East peace talks."
+    },
+    {
+        "id": "bbc-sport",
+        "name": "BBC Sport",
+        "author": "Toms Abin",
+        "title": "Olympic Games Preparation",
+        "description": "Preparations and updates on the upcoming Olympic Games.",
+        "url": "https://www.bbc.com/sport/olympics/2024-preparation",
+        "urlToImage": "https://cdn.bbc.com/sport/olympics-preparation.jpg",
+        "publishedAt": "2024-09-12T08:00:00Z",
+        "content": "Insights and updates on the preparations for the upcoming Olympic Games."
+    },
+    {
+        "id": "forbes",
+        "name": "Forbes",
+        "author": "Mathew Allen",
+        "title": "Top Business Leaders of 2024",
+        "description": "A list of the most influential business leaders of the year.",
+        "url": "https://www.forbes.com/business-leaders-2024",
+        "urlToImage": "https://cdn.forbes.com/business-leaders.jpg",
+        "publishedAt": "2024-09-13T11:00:00Z",
+        "content": "Profiles and achievements of the top business leaders making an impact in 2024."
+    }
+]
